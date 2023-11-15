@@ -1,0 +1,19 @@
+<div>
+    <table border="10px">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Website</th>
+        </tr>
+
+        {{#each users}}
+
+        <tr>
+            <td>{{name}}</td>
+            <td>{{address.street}} {{address.suite}} {{address.city}} {{address.zipcode}}</td>
+            <td><a href="http://{{website}}">Link</a></td>
+        </tr>
+
+        {{/each}}
+    </table>
+</div>
